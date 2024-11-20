@@ -1,0 +1,98 @@
+import { AnimatedName } from '../animated-name.tsx';
+
+export const metadata = {
+  title: 'Photon Headset',
+  alternates: {
+    canonical: '/projects/photon',
+  },
+};
+
+# Photon Headset: Augmented Reality for Vision Assistance
+
+<AnimatedName />
+### Summary
+
+Photon is an augmented reality headset designed to help visually impaired users with navigation, obstacle avoidance, and depth perception. Over six months, I built more than 20 prototypes and led a team of 10, working across hardware, software, and industrial design to refine the system. The headset uses retinal projection to provide a clear, wide field of view and is built to be affordable and modular.
+
+I’ll pick this project up again once I learn more about graphics and rendering.
+
+---
+
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50vh' }}>
+      <img 
+        src="/images/PhotonSLA v2.gif" 
+        alt="Photon SLA v2 Animation" 
+        style={{
+          transform: 'scale(1.5)', 
+          maxWidth: '100%', 
+          height: 'auto',
+        }}
+      />
+    </div>
+
+### Key Features
+
+The headset projects images directly onto the retina, bypassing traditional screens, which makes the visuals sharper and easier to follow. It tracks the user’s eye movements and adjusts the projection in real time for better usability. Everything is designed to be affordable, with components 3D-printed and built for under $200. It’s also fully open-source, so anyone can modify it or add their own ideas.
+
+---
+
+### Development Process
+
+This project went through over 20 iterations, with each prototype testing and improving specific parts of the design. I focused on creating 3D-printed optical systems and refining fit and assembly for ease of use. I organized my team using Notion, with tasks ranging from designing PCBs for the laser projection system to coordinating experiments and keeping detailed documentation.
+
+There were challenges. The retinal projection required precise alignment of optics, which I solved by designing a custom optical system that keeps the field of view wide and sharp. The small "eye-box" (the area where the image is clear) was another issue, and I addressed it by using small actuators to adjust the lens position in real time.
+
+---
+
+### Achievements and Future Plans
+
+The headset has been shared with AR/VR developers and presented at meetups for feedback. The next step is to distribute beta kits to developers and optometrists for testing. The long-term goal is to make Photon a modular platform for assistive technology and bring affordable augmented reality to more people.
+
+**Gallery:**
+
+<div style={{ 
+  display: 'grid', 
+  gridTemplateColumns: '1fr 1fr', 
+  gridAutoRows: '1fr', 
+  gap: '10px', 
+  maxWidth: '100%', 
+  margin: 'auto' 
+}}>
+  {[
+    '/images/IMG_3738.JPG',
+    '/images/IMG_3737.JPG',
+    '/images/IMG_3736.JPG',
+    '/images/Hexagon-Diagram.jpeg',
+    '/images/cachedImage.jpg',
+    '/images/image (19).png',
+    '/images/IMG_2258.jpg',
+    '/images/IMG_2518.jpg',
+    '/images/IMG_2892.JPG',
+    '/images/IMG_2940.JPG',
+    '/images/IMG_20240416_182513_358.png',
+    '/images/IMG_4140.jpg',
+    '/images/IMG_2608 (1).JPG',
+    '/images/IMG_2522.JPG'
+  ].map((src, index) => (
+    <div key={index} style={{ 
+      width: '100%', 
+      paddingTop: '100%', /* Forces a square aspect ratio */
+      position: 'relative',
+      overflow: 'hidden' 
+    }}>
+      <img 
+        src={src} 
+        alt={`image-${index}`} 
+        style={{ 
+          position: 'absolute', 
+          top: '50%', 
+          left: '50%', 
+          width: '100%', 
+          height: '100%', 
+          objectFit: 'cover', 
+          transform: 'translate(-50%, -50%)'
+        }}
+      />
+    </div>
+  ))}
+</div>

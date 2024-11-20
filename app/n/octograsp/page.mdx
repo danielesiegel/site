@@ -1,0 +1,120 @@
+import { AnimatedName } from '../animated-name.tsx';
+
+export const metadata = {
+  title: 'OctoGrasp: The Cephalopod-Inspired Prosthetic Arm',
+  alternates: {
+    canonical: '/projects/octograsp',
+  },
+};
+
+# OctoGrasp: The Cephalopod-Inspired Prosthetic Arm
+
+<AnimatedName />
+
+### Summary
+
+OctoGrasp is a prosthetic arm inspired by octopus suckers. It uses suction and flexible joints to improve grip and dexterity. The arm is lightweight, affordable, and performs better than most high-cost prosthetics.
+
+---
+
+### Key Metrics
+
+- **Cost:** $111.57, ~1% of typical prosthetics ($10,000+).
+- **Speed:** 0.43 seconds per grip, 3.6x faster than competitors.
+- **Dexterity:** Matches all 33 grips in the [Human Grasping Database](http://grasp.xief.net/).
+- **Flexibility:** Six degrees of freedom, 1.8x more than average.
+
+---
+
+### Design and Process
+
+I built OctoGrasp with pneumatic pumps that control suction cups, allowing it to securely hold objects of various shapes and sizes, just like an octopus. To make the fingers bend naturally, I used TPU (thermoplastic polyurethane), which also kept the design simple and affordable. I programmed the control system using an Arduino Nano, letting it work with either a joystick or camera input for easy operation. Over six months, I spent 300–500 hours refining the design, iterating through 20+ prototypes to improve its functionality and usability.
+
+
+### Awards
+
+- **ISEF 2023:** Grand Award in Biomedical Engineering.
+- **California Science Fair:** Top Prize.
+- **Synopsys Silicon Valley Science Fair:** Grand Prize, IEEE Prize, IBM Prize, Naval Research Prize.
+
+---
+
+
+
+Learn more: [OctoGrasp Project Page](https://projectboard.world/isef/project/enbm072-octograsp-the-cephalopod-inspired-prosthetic-arm).
+
+<iframe
+  width="605"
+  height="350"
+  src="https://www.youtube.com/embed/t4LyfVbBHyo?start=2322"
+  title="Regeneron ISEF 2023 - Grand Awards Ceremony"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen
+></iframe>
+
+
+<div style={{ 
+  display: 'grid', 
+  gridTemplateAreas: `
+    "quarter1 quarter2"
+    "quarter3 quarter4"
+  `,
+  gridTemplateColumns: '1fr 1fr', 
+  gridTemplateRows: 'auto auto', 
+  gap: '10px', 
+  maxWidth: '100%', 
+  margin: 'auto' 
+}}>
+  {/* First Quarter: Photo 1 and 3 stacked */}
+  <div style={{ gridArea: 'quarter1' }}>
+    <img 
+        src="/images/octograspposter2.jpg" 
+        alt="webphoto1" 
+        style={{ maxWidth: '100%', height: 'auto', marginBottom: '10px' }}
+    />
+    <img 
+        src="/images/IMG_0401 (1).jpg" 
+        alt="webphoto3" 
+        style={{ maxWidth: '100%', height: 'auto' }}
+    />
+  </div>
+
+  {/* Second Quarter: Photo 2 */}
+  <div style={{ 
+    gridArea: 'quarter2', 
+    display: 'flex', 
+    alignItems: 'center', 
+    justifyContent: 'center', 
+    overflow: 'hidden' 
+  }}>
+    <img 
+        src="/images/octograspposter.jpeg" 
+        alt="webphoto2" 
+        style={{ 
+          width: '100%', 
+          height: '100%', 
+          objectFit: 'cover' 
+        }}
+    />
+  </div>
+
+  {/* Third Quarter: Photo 5 */}
+  <div style={{ gridArea: 'quarter3' }}>
+    <img 
+        src="/images/69967371792__38E1DBEF-8D5E-4421-B788-53DB2F479300.jpg" 
+        alt="webphoto5" 
+        style={{ maxWidth: '100%', height: 'auto' }}
+    />
+  </div>
+
+  {/* Fourth Quarter: Photo 4 */}
+  <div style={{ gridArea: 'quarter4' }}>
+    <img 
+        src="/images/69880604254__EF2E59AB-CD9B-4BE2-AC76-26EAB59AA772.jpg" 
+        alt="webphoto4" 
+        style={{ maxWidth: '100%', height: 'auto' }}
+    />
+  </div>
+</div>

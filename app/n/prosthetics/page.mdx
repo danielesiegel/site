@@ -1,0 +1,75 @@
+import { AnimatedName } from '../animated-name.tsx';
+
+export const metadata = {
+  title: 'Prosthetics Design: Leg Prosthetics and Servo Arm Systems',
+  alternates: {
+    canonical: '/projects/prosthetics',
+  },
+};
+
+# Prosthetics Design: Leg Prosthetics and Servo Arm Systems
+
+<AnimatedName />
+
+### Summary
+
+I have worked on designing prototypes for prosthetic legs, incorporating concepts like inverse kinematics to improve movement and control. Additionally, I have developed servo arm systems as prosthetics, focusing on making them functional, reliable, and adaptable for users.
+
+---
+
+### Notes
+
+- **Inverse Kinematics:** Applied to leg prosthetics for better movement control and mechanical element positioning.
+- **Organic Design:** I have enjoyed designing prosthetics that value form as they do function, relying on spline-based CAD modeling to create organic contours and features.
+- **Servo Arms:** Designed a robotic arm based on small servo motors to teach myself servo motor programming as well as metal-based fabrication techniques such as bent sheet metal fabrication.
+
+---
+
+Gallery:
+
+<div style={{ 
+  display: 'grid', 
+  gridTemplateColumns: '1fr 1fr', 
+  gridAutoRows: '1fr', 
+  gap: '10px', 
+  maxWidth: '100%', 
+  margin: 'auto' 
+}}>
+  {[
+    '/images/IMG_9547.jpg',
+    '/images/IMG_9546.jpg'
+  ].map((src, index) => (
+    <div key={index} style={{ 
+      width: '100%', 
+      paddingTop: '100%', /* Forces a square aspect ratio */
+      position: 'relative',
+      overflow: 'hidden' 
+    }}>
+      <img 
+        src={src} 
+        alt={`image-${index}`} 
+        style={{ 
+          position: 'absolute', 
+          top: '50%', 
+          left: '50%', 
+          width: '100%', 
+          height: '100%', 
+          objectFit: 'cover', 
+          transform: 'translate(-50%, -50%)'
+        }}
+      />
+    </div>
+  ))}
+</div>
+
+---
+
+<iframe 
+  title="Prosthetic Leg 3D Model" 
+  width="100%" 
+  height="500px" 
+  src="https://sketchfab.com/models/fcd1c98d8b244f09af153719446bf8f2/embed" 
+  frameBorder="0" 
+  allow="autoplay; fullscreen; xr-spatial-tracking" 
+  allowFullScreen>
+</iframe>

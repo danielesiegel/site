@@ -7,13 +7,13 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leerob.com'),
+  metadataBase: new URL('https://siegel.bio'),
   alternates: {
     canonical: '/',
   },
   title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson',
+    default: 'Daniel Siegel',
+    template: '%s | Daniel Siegel',
   },
   description: 'Frontend developer, optimist, community builder.',
 };
@@ -42,10 +42,10 @@ export default function RootLayout({
 
 function Footer() {
   const links = [
-    { name: '@leerob', url: 'https://x.com/leeerob' },
-    { name: 'youtube', url: 'https://www.youtube.com/@leerob' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/leeerob' },
-    { name: 'github', url: 'https://github.com/leerob' },
+    { name: '@danedisonsiegel', url: 'https://x.com/danedisonsiegel' },
+    { name: 'youtube', url: 'https://www.youtube.com/@scenicsynths' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/danielsiegel04' },
+    { name: 'github', url: 'https://github.com/danielesiegel' },
   ];
 
   return (

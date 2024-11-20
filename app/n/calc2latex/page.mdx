@@ -1,0 +1,47 @@
+import { AnimatedName } from '../animated-name.tsx';
+
+export const metadata = {
+  title: 'Calculus II',
+  alternates: {
+    canonical: '/n/calc2latex',
+  },
+};
+
+# LaTeX Notes for Calculus II
+
+<AnimatedName />
+
+## Details
+
+These LaTeX notes were taken for Professor Christopher Coscia's Calculus II class at Tufts University during Fall 2024. They were created using my shorthand LaTeX format, "TeXpress," allowing for live note-taking at the same speed as traditional handwritten notes.
+
+These notes are intended for personal study and should not be used to cheat. If you choose to share or distribute them, please credit me as the author.
+
+## Notes
+<div>
+  <ul>
+    {[
+      { day: 1, file: "Calculus II - Day 1.pdf", summary: "Sequences, limits, Fibonacci formula" },
+      { day: 2, file: "Calculus II - Day 2.pdf", summary: "Squeeze theorem, monotonic sequences, growth rates" },
+      { day: 3, file: "Calculus II - Day 3.pdf", summary: "Series convergence, geometric and telescoping series" },
+      { day: 4, file: "Calculus II - Day 4.pdf", summary: "Divergence test, p-series, harmonic series" },
+      { day: 5, file: "Calculus II - Day 5.pdf", summary: "Comparison and limit comparison tests" },
+      { day: 6, file: "Calculus II - Day 6.pdf", summary: "Alternating series, absolute vs. conditional convergence" },
+      { day: 7, file: "Calculus II - Day 7.pdf", summary: "Ratio and root tests for series convergence" },
+      { day: 8, file: "Calculus II - Day 8.pdf", summary: "Taylor polynomials and error estimation" },
+      { day: 9, file: "Calculus II - Day 9.pdf", summary: "Power series, radius, interval of convergence" },
+      { day: 10, file: "Calculus II - Day 10.pdf", summary: "Taylor series, derivatives, e and π infinite sums" },
+      { day: 11, file: "Calculus II - Day 11.pdf", summary: "Fundamental Theorem of Calculus, Riemann sums" },
+      { day: 12, file: "Calculus II - Day 12.pdf", summary: "Integration by substitution, u-substitution rules" },
+      { day: 13, file: "Calculus II - Day 13.pdf", summary: "Integration by parts, IBP strategies, LIPPET acronym" },
+      { day: 14, file: "Calculus II - Day 14.pdf", summary: "Trigonometric identities, substitutions, and area formulas" },
+      { day: 15, file: "Calculus II - Day 15.pdf", summary: "Trigonometric substitution and integration techniques" },
+      { day: 16, file: "Calculus II - Day 16.pdf", summary: "Partial fractions and rational function integration" },
+    ].map(({ day, file, summary }) => (
+      <li key={day}>
+        Day {day}: <a href={`/files/${file}`} download>{`${summary}`}</a>
+      </li>
+    ))}
+  </ul>
+</div>
+
