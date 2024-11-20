@@ -55,66 +55,48 @@ Learn more: [OctoGrasp Project Page](https://projectboard.world/isef/project/enb
 ></iframe>
 
 
-<div style={{ 
-  display: 'grid', 
-  gridTemplateAreas: `
+<div style={{display: 'grid', gridTemplateAreas: `
     "quarter1 quarter2"
     "quarter3 quarter4"
-  `,
-  gridTemplateColumns: '1fr 1fr', 
-  gridTemplateRows: 'auto auto', 
-  gap: '10px', 
-  maxWidth: '100%', 
-  margin: 'auto' 
-}}>
+  `, gridTemplateColumns: '1fr 1fr', gridTemplateRows: 'auto auto', gap: '10px', maxWidth: '100%', margin: 'auto',}}>
   {/* First Quarter: Photo 1 and 3 stacked */}
-  <div style={{ gridArea: 'quarter1' }}>
+  <div style={{ gridArea:'quarter1'}}>
     <img 
         src="/images/octograspposter2.jpg" 
         alt="webphoto1" 
-        style={{ maxWidth: '100%', height: 'auto', marginBottom: '10px' }}
+        style={{maxWidth:'100%', height:'auto', marginBottom:'10px'}}
     />
     <img 
         src="/images/IMG_0401 (1).jpg" 
         alt="webphoto3" 
-        style={{ maxWidth: '100%', height: 'auto' }}
+        style={{maxWidth:'100%', height:'auto'}}
     />
   </div>
 
   {/* Second Quarter: Photo 2 */}
-  <div style={{ 
-    gridArea: 'quarter2', 
-    display: 'flex', 
-    alignItems: 'center', 
-    justifyContent: 'center', 
-    overflow: 'hidden' 
-  }}>
+  <div style={{gridArea: 'quarter2', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden'}}>
     <img 
         src="/images/octograspposter.jpeg" 
         alt="webphoto2" 
-        style={{ 
-          width: '100%', 
-          height: '100%', 
-          objectFit: 'cover' 
-        }}
+        style={{width: '100%', height: '100%', objectFit: 'cover'}}
     />
   </div>
 
   {/* Third Quarter: Photo 5 */}
-  <div style={{ gridArea: 'quarter3' }}>
+  <div style={{gridArea:'quarter3'}}>
     <img 
         src="/images/69967371792__38E1DBEF-8D5E-4421-B788-53DB2F479300.jpg" 
         alt="webphoto5" 
-        style={{ maxWidth: '100%', height: 'auto' }}
+        style={{ maxWidth:'100%', height:'auto'}}
     />
   </div>
 
   {/* Fourth Quarter: Photo 4 */}
-  <div style={{ gridArea: 'quarter4' }}>
+  <div style={{gridArea:'quarter4'}}>
     <img 
         src="/images/69880604254__EF2E59AB-CD9B-4BE2-AC76-26EAB59AA772.jpg" 
         alt="webphoto4" 
-        style={{ maxWidth: '100%', height: 'auto' }}
+        style={{maxWidth:'100%', height:'auto'}}
     />
   </div>
 </div>

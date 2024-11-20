@@ -1,23 +1,26 @@
-import type { NextConfig } from 'next';
 import createMDX from '@next/mdx';
 import postgres from 'postgres';
 
-export const sql = postgres(process.env.POSTGRES_URL!, {
+// Set up the database connection
+const sql = postgres(process.env.POSTGRES_URL, {
   ssl: 'allow',
 });
 
-const nextConfig: NextConfig = {
+// Next.js configuration
+const nextConfig = {
   pageExtensions: ['mdx', 'ts', 'tsx'],
   async redirects() {
     if (!process.env.POSTGRES_URL) {
       return [];
     }
 
-    let redirects = await sql`
+    // Fetch redirects from the database
+    const redirects = await sql`
       SELECT source, destination, permanent
       FROM redirects;
     `;
 
+    // Map the results into the expected format
     return redirects.map(({ source, destination, permanent }) => ({
       source,
       destination,
