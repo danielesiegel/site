@@ -7,7 +7,7 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://siegel.bio'),
+  metadataBase: new URL('https://siegel.vercel.app'),
   alternates: {
     canonical: '/',
   },
