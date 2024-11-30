@@ -30,6 +30,14 @@ const nextConfig = {
   experimental: {
     mdxRs: true,
   },
+  webpack: (config) => {
+    // Ignore the `canvas` module in the browser
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      canvas: false, // Tell Webpack to ignore `canvas` in the browser
+    };
+    return config;
+  },
 };
 
 const withMDX = createMDX({});
