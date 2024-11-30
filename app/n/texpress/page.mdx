@@ -1,0 +1,26 @@
+import { AnimatedName } from '../animated-name.tsx';
+import TeXpressDocumentation from '../TeXpressDocumentation.tsx';
+
+export const metadata = {
+  title: 'TeXpress',
+  alternates: {
+    canonical: '/n/texpress',
+  },
+};
+
+# TeXpress Documentation
+
+<AnimatedName />
+
+<div>
+  <ul>
+    {[
+      {file: "TeXpressDocumentation.pdf", summary: "Download TeXpress Documentation"},
+    ].map(({ day, file, summary}) => (
+      <li key={day}>
+      <a href={`/files/${file}`} download>{`${summary}`}</a>
+      </li>
+    ))}
+  </ul>
+</div>
+<TeXpressDocumentation />
