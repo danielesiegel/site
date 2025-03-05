@@ -1,0 +1,68 @@
+import { AnimatedName } from '../animated-name.tsx';
+
+export const metadata = {
+  title: 'Stanford Schnitzer Lab: Axial & Rotational Manipulator Mounts',
+  alternates: {
+    canonical: '/projects/pyramidal',
+  },
+};
+
+# Stanford Schnitzer Lab: Axial & Rotational Manipulator Mounts
+
+<AnimatedName />
+
+### Summary
+
+At **Mark Schnitzer’s Lab at Stanford University**, I designed **axial and rotational manipulator adjustable mount prototypes**, iterating through **10 different designs** over several months. The project focused on **tight tolerances for FDM 3D printing**, ensuring **precise fits, modularity, and variability**—critical for stable yet adjustable manipulation.  
+
+Much of my work refined **the securing system**, balancing **rigidity in fixed states** with **adjustability in dynamic configurations**. Each iteration tested improvements in **locking mechanisms, rotational stability, and modular adaptations**, making the system more reliable and easier to integrate.
+
+---
+
+<div style={{ 
+    display: 'grid', 
+    gridTemplateAreas: `
+      "quarter1 quarter2"
+      "quarter3 quarter4"
+    `, 
+    gridTemplateColumns: '1fr 1fr', 
+    gridTemplateRows: 'auto auto', 
+    gap: '10px', 
+    maxWidth: '100%', 
+    margin: 'auto'}}>
+  {/* Top Left: Prototype Assembly */}
+  <div style={{ gridArea: 'quarter1'}}>
+    <img 
+        src="/images/IMG_3805.png" 
+        alt="Prototype Assembly" 
+        style={{ maxWidth: '100%', height: 'auto'}}
+    />
+  </div>
+
+  {/* Top Right: GIF of Manipulator in Action */}
+  <div style={{ gridArea: 'quarter2'}}>
+    <img 
+        src="/images/gif.gif" 
+        alt="Manipulator GIF" 
+        style={{ maxWidth: '100%', height: 'auto'}}
+    />
+  </div>
+
+  {/* Bottom Left: Tolerance Testing */}
+  <div style={{ gridArea: 'quarter3'}}>
+    <img 
+        src="/images/IMG_4080.png" 
+        alt="Tolerance Testing" 
+        style={{ maxWidth: '100%', height: 'auto'}}
+    />
+  </div>
+
+  {/* Bottom Right: Locking Mechanism Development */}
+  <div style={{ gridArea: 'quarter4'}}>
+    <img 
+        src="/images/IMG_3804.png" 
+        alt="Locking Mechanism" 
+        style={{ maxWidth: '100%', height: 'auto'}}
+    />
+  </div>
+</div>

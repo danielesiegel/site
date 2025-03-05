@@ -1,0 +1,98 @@
+import { AnimatedName } from '../animated-name.tsx';
+
+export const metadata = {
+  title: 'SmartHug: A Modular Vibrational Haptic Grid',
+  alternates: {
+    canonical: '/projects/smarthug',
+  },
+};
+
+# SmartHug: A Modular Vibrational Haptic Grid
+
+<AnimatedName />
+
+### Summary
+
+SmartHug is a project I'm currently working on through the Tufts Idea Lab. The device is a **flexible, ESP32-powered haptic feedback system** designed for **targeted pain relief, accessibility, and interactive applications**. It uses an **addressable vibration motor grid** to create programmable tactile sensations that synchronize with **visual and auditory feedback**, making it useful for **therapy, gaming, and human-computer interaction**.
+
+---
+
+### Key Metrics
+
+- **Grid Size:** 5×5 addressable matrix, expandable via modular PCB design.
+- **Response Time:** 5ms per vibration cue, enabling real-time feedback.
+- **Power Efficiency:** PWM-controlled motors with optimized power distribution.
+- **Connectivity:** Wi-Fi and Bluetooth support for remote customization.
+
+---
+
+### Design and Process
+
+I built SmartHug around an **ESP32 Wroom 2 module** with **custom PCBs** to efficiently control a dense grid of **vibration motors**. Each node in the system is **individually addressable**, allowing for localized haptic feedback patterns. **I2C GPIO expanders** help scale the system while maintaining low latency.
+
+Over the course of **last semester**, I've worked with my team to:
+- **Design and assemble custom PCBs**, refining motor control and power efficiency.
+- **Develop a 5×5 LED prototype grid** for testing haptic-visual interaction.
+- **Teach PCB design and reflow soldering** to other team members.
+- **Experiment with actuator-driven soft robotics** for enhanced tactile resolution.
+
+---
+
+### Applications and Future Work
+
+SmartHug is designed for **three core applications**:
+
+1. **Therapeutic and Assistive Technology**
+   - Provides **targeted vibrational therapy** for **pain relief and muscle relaxation**.
+   - Functions as an **alternative communication tool** for visually impaired users.
+   - Can be integrated into **physical therapy and rehabilitation** programs.
+
+2. **Immersive Media and Gaming**
+   - Enhances **VR/AR** by adding **spatial haptic effects**.
+   - Can be embedded in **gaming peripherals** to improve realism.
+   - Supports **gesture-based control with tactile cues**.
+
+3. **Soft Robotics and Adaptive Interfaces**
+   - Future versions will incorporate **biocompatible materials**.
+   - AI-driven **real-time haptic adjustments** using physiological data.
+   - **Expanded actuator options**, including servos and linear resonant actuators.
+
+---
+
+
+<div style={{display: 'grid', gridTemplateAreas: `
+    "quarter1 quarter2"
+    "quarter4 quarter3"
+  `, gridTemplateColumns: '1fr 1fr', gridTemplateRows: 'auto auto', gap: '10px', maxWidth: '100%', margin: 'auto',}}>
+  {/**/}
+  <div style={{ gridArea:'quarter1'}}>
+    <img 
+        src="/images/smarthug1.jpeg" 
+        alt="SmartHug Prototype" 
+        style={{maxWidth:'100%', height:'auto', marginBottom:'10px'}}
+    />
+    <img 
+        src="/images/smarthugcircuit.jpeg" 
+        alt="PCB Soldering Process" 
+        style={{maxWidth:'100%', height:'auto'}}
+    />
+  </div>
+
+  {/**/}
+  <div style={{gridArea: 'quarter2', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden'}}>
+    <img 
+        src="/images/smarthugparts.jpeg" 
+        alt="Testing SmartHug Grid" 
+        style={{width: '100%', height: '100%', objectFit: 'cover'}}
+    />
+  </div>
+
+  {/* Fourth Quarter: Assembly Process */}
+  <div style={{gridArea:'quarter4'}}>
+    <img 
+        src="/images/smarthug3d.jpeg" 
+        alt="PCB Components Arriving" 
+        style={{maxWidth:'203%', height:'auto'}}
+    />
+  </div>
+</div>
