@@ -43,7 +43,7 @@ export default function RootLayout({
 function Footer() {
   const links = [
     { name: '@danedisonsiegel', url: 'https://x.com/danedisonsiegel' },
-    { name: 'youtube', url: 'https://www.youtube.com/@scenicsynths' },
+    { name: 'youtube', url: 'https://www.youtube.com/@DanielESiegel' },
     { name: 'linkedin', url: 'https://www.linkedin.com/in/danielsiegel04' },
     { name: 'github', url: 'https://github.com/danielesiegel' },
   ];
