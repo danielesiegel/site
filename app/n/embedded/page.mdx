@@ -1,0 +1,33 @@
+import { AnimatedName } from '../animated-name.tsx';
+import TeXpressDocumentation from '../TeXpressDocumentation.tsx';
+
+export const metadata = {
+  title: 'Embedded Systems',
+  alternates: {
+    canonical: '/n/embedded',
+  },
+};
+
+# LaTeX Notes for Embedded Systems
+
+<AnimatedName />
+
+## Details
+
+These LaTeX notes were taken for Professor Chang's Embedded Systems class at Tufts University during Spring 2025. They were created using my shorthand LaTeX format, "TeXpress," allowing for live note-taking at the same speed as traditional handwritten notes.
+
+These notes are intended for personal study and should not be used to cheat. If you choose to share or distribute them, please credit me as the author.
+
+<div>
+  <ul>
+    {[
+      {file: "Embedded-Systems.pdf", summary: "Download Embedded Systems Notes"},
+    ].map(({ day, file, summary}) => (
+      <li key={day}>
+      <a href={`/files/${file}`} download>{`${summary}`}</a>
+      </li>
+    ))}
+  </ul>
+</div>
+<TeXpressDocumentation />
+

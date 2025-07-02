@@ -9,7 +9,7 @@ import { GlobalWorkerOptions } from 'pdfjs-dist';
 GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js`;
 
 const TeXpressDocumentation: React.FC = () => {
-  const pdfUrl = '/files/TeXpressDocumentation.pdf'; // Path to your PDF file
+  const pdfUrl = '/files/Embedded-Systems.pdf'; // Path to your PDF file
 
   return (
     <>
