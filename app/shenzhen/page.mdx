@@ -1,0 +1,21 @@
+export const metadata = {
+  title: 'Redirecting...',
+  robots: 'noindex, nofollow'
+}
+
+<script dangerouslySetInnerHTML={{
+  __html: `
+    if (typeof window !== 'undefined') {
+      window.location.href = 'https://trip-bm9h.onrender.com';
+    }
+  `
+}} />
+
+<div style={{textAlign: 'center', padding: '50px'}}>
+  <h2>Redirecting...</h2>
+  <p>If you are not redirected automatically, <a href="https://trip-bm9h.onrender.com">click here</a>.</p>
+</div>
+
+<noscript>
+  <meta httpEquiv="refresh" content="0; url=https://trip-bm9h.onrender.com" />
+</noscript> 
