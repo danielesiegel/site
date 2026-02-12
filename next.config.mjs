@@ -27,6 +27,18 @@ const nextConfig = {
       permanent: !!permanent,
     }));
   },
+  async rewrites() {
+    return [
+      {
+        source: '/bookshelves',
+        destination: '/bookshelves/index.html',
+      },
+      {
+        source: '/bookshelves/:path*',
+        destination: '/bookshelves/index.html',
+      },
+    ];
+  },
   experimental: {
     mdxRs: true,
   },
