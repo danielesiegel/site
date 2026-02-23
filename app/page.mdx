@@ -1,79 +1,29 @@
 import { NameTransition } from './name';
 import { Quote } from './quote';
-import { Columns, Column } from './Columns'
-import { HoverImageLink } from './HoverImageLink';
-import { ProjectsSection } from './ProjectsSection';
-import { PortfolioContent } from './PortfolioContent';
+import { PageSections } from './PageSections';
 
 <NameTransition />
 
 <Quote />
 
-*update (fall 2025) -* I've dropped out of Tufts University to work on robotics full-time. I'm currently working on reliable robot motion and perception in everyday settings at <a href="https://integralmimetics.com" target="_blank" rel="noopener noreferrer"><img src="/images/integral-mimetics-logo.png" alt="Integral Mimetics" style={{display: 'inline', height: '1.75em', verticalAlign: 'middle', margin: '0 0.1em'}} /></a>
+<div className="bio-section">
 
-I'm a computer engineer and robotics researcher decentralized between Woodside, Palo Alto, and San Francisco, CA. Previously, I've worked on ML for low-power AI hardware at [FemtoAI](https://www.femto.ai), designed quantum circuits at [Katmai Computing](https://www.katmaicomputing.com/), and built humanoid robots with [Tangible](https://tangiblerobots.ai/).
+*update (fall 2025) -* I've dropped out of Tufts University to work on robotics full-time. I'm at <a href="https://integralmimetics.com" target="_blank" rel="noopener noreferrer"><img src="/images/integral-mimetics-logo.png" alt="Integral Mimetics" style={{display: 'inline', height: '2.02em', verticalAlign: 'middle', margin: '-0.4em 0.07em', lineHeight: 0}} /></a> focused on reliable robot motion and perception in everyday settings.
 
-I work at the intersection of electronic/PCB design, biomedical and assistive technology, robotics, prototyping and industrial design, and emergent tech. I'm focused on data acquisition for AI training, where the quality of input data directly determines model performance. I build precise collection systems to capture better training data and improve model outputs.
+I'm a computer engineer and robotics researcher based between Woodside, Palo Alto, and San Francisco. Previously I worked on ML for low-power AI hardware at [FemtoAI](https://www.femto.ai), designed quantum circuits at [Katmai Computing](https://www.katmaicomputing.com/), and built humanoid robots with [Tangible](https://tangiblerobots.ai/).
 
-{/* I design systems with long-term reliability in mind, which shapes how I think about alignment. I'm curious about what makes AI actually safe versus just compliant. Most AI learns through [mimetic algorithms](https://mimetictheory.com/mimetic-ai-mimesis-and-artificial-intelligence/) (copying human behavior that may or may not be ethical) and I wonder if this imitation lacks stable foundations. I'm exploring anchored alignment: grounding systems in intrinsic principles instead of just copying behaviors that appear aligned. */}
+I am curious about implicit feedback loops, especially in [biomimetic systems](https://www.lesswrong.com/posts/JxNrEo6hvzuCvu2s7/questioning-computationalism). Many of my projects translate signals from one system into a form another system can use, so I need to explicate causality where it might not be obvious. I'm especially interested in René Girard's [Mimetic Theory](https://mimetictheory.com) and what it looks like when you extend mimetic dynamics to non-living complex systems. Emergent properties can be anticipated if the data used is accurately measured and interpreted.
+
+Mimetics is learning by imitation, the oldest way any creature or thing has ever learned, and now applied to the newest learners. The bottleneck is the quality of the data we use to teach, not necessarily the intelligence! So I design the hardware and software that captures signals with enough fidelity for complex systems to learn from them.
 
 At Stanford, I contributed to the [Biomechatronics Lab's](https://biomechatronics.stanford.edu/) self-steering cane project and designed adjustable manipulator fixtures for [Dr. Mark Schnitzer's Lab](https://schnitzerlab.stanford.edu/). I also developed several projects with Tufts' [IdeaLAB](https://sites.tufts.edu/idea/).
 
-<img 
-    src="/images/nodropshadow.png" 
-    alt="webphoto" 
+</div>
+
+<img
+    src="/images/nodropshadow.png"
+    alt="webphoto"
     style={{maxWidth: '100%', height: 'auto',}}
       />
 
-[Haptics](/n/smarthug)<br/>
-[Logarithm Labs](/n/wip)<br/>
-[Prosthetic Arm](/n/octograsp)<br/>
-[Quantum Register](/n/katmai)<br/>
-[AR Headset](/n/photon)<br/>
-[Blind Cane](/n/surround)<br/>
-[Gym Optimizer](https://devpost.com/software/gymbo)<br/>
-[Prosthetic Prototypes](/n/prosthetics)<br/>
-[Sawtooth Soundsystem](https://www.instagram.com/sawtoothsoundsystem/)<br/>
-[3D Print Farm Tracker](/n/3dprint)<br/>
-[Axial and Rotational Manipulators](/n/pyramidal)<br/>
-[Home 3D Print Farm + Lab](/n/homeprintfarm)
-
-## Academics
-[LaTeX](https://www.latex-project.org/about/) Notes  - [Calculus II](/n/calc2latex) / [Embedded Systems](/n/embedded)
-
-{/* **Selected Courses** - Embedded Systems ([EE0014](https://www.ece.tufts.edu/ee/14/)), Computer Tools for Musicians ([MUS0061](https://mma.pages.tufts.edu/ctfm/)), Mitre eCTF ([CS150-06](https://www.cs.tufts.edu/t/courses/description/spring2025/CS/150-06)), Linear Algebra ([MATH0070](https://universitycollege.tufts.edu/courses/browse/linear-algebra)) */}
-
-**Clubs & Societies** - [Tufts IEEE](https://tufts.presence.io/organization/institute-of-electrical-and-electronics-engineers-ieee), [Jumbo Juggling / Fire & Flow Club](https://tufts.presence.io/organization/jumbo-fire-flow), Mitre eCTF (see above), Tufts Solar Vehicle Project ([TSVP](https://sites.tufts.edu/solarvp/)), [Music Production Club](https://www.instagram.com/musicprodclub/), [Society of Physics Students](https://as.tufts.edu/physics/resources/society-physics-students)
-
-**Lab Affiliations**
-
-Tufts [IDEALab](https://sites.tufts.edu/idea/) (Prof. James Intriligator), [Harvard Innovation Labs](https://innovationlabs.harvard.edu/), [Nolop](https://nolop.org/) FAST Facility, Stanford [Pyramidal Lab](https://pyramidal.stanford.edu/) (Prof. Mark Schnitzer), Stanford [Biomechatronics Lab](https://biomechatronics.stanford.edu/), De Anza [Additive Manufacturing Lab](https://www.deanza.edu/dmt/)
-
-## Awards
-
-- Emerging Tech Winner - JumboHack Hackathon
-- OctoGrasp
-    - Grand Award - International Science and Engineering Fair (2nd Place in Biomedical Engineering)
-    - Grand Prize - Best of Championship (Physical Sciences) - Synopsys Silicon Valley Science and Technology Championship
-    - 1st Award, Physical Science and Engineering Category - Synopsys Silicon Valley Science and Technology Championship
-    - IBM Award
-    - Office of Naval Research - United States Navy / US Marine Corps Award
-    - IEEE Electro-Technology Award
-    - 2nd Place, California Science and Engineering Fair
-- Silicon Valley Engineering Council Award (dinner w/ Jensen Huang lol)
-- Surround3
-    - Castro Family Award for Best Physical Science Projects - Synopsys Silicon Valley Science and Technology Championship
-    - 1st Award, Physical Science and Engineering Category - Synopsys Silicon Valley Science and Technology Championship
-    - Synopsys Outreach Foundation n+1 Prize
-    - Nominated to compete - Broadcom MASTERS
-    - Honorable Mention, California Science and Engineering Fair
-- 3rd Place - Tufts Robot-a-thon
-- Honorable Mention - Code Metal Smart Cities Hackathon
-- ONR Medallion, United States Navy and Marine Corps
-- Video Design Award - First Robotics Competition (FRC)
-
-## Personal Info
-- [My Stack](/n/mystack)
-- [YouTube](https://www.youtube.com/@DanielESiegel) Channel
-- [Spotify](https://open.spotify.com/artist/3zemT3IjcD6G4nKj7q6GvB) Page (my hardware / sampler electronic music project)
-- Ideas/Suggestions/Questions? [Email Me!](mailto:daniel.siegel@tufts.edu)
+<PageSections />

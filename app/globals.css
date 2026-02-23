@@ -82,6 +82,10 @@ hr {
   color: var(--color-gray-200);
 }
 
+.bio-section > * + * {
+  margin-top: 1.2rem;
+}
+
 /* Remove Safari input shadow on mobile */
 input[type='text'],
 input[type='email'] {
